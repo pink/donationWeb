@@ -623,6 +623,16 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
     margin-top: 1px;    
 }
 
+.navbar-form .search-bar {    
+    width: 300px;
+    height: 50px;
+    border-color: #D4D2D2;
+    padding-left: 45px;
+    border-radius: 5px;
+    background: white url('../img/icons/search-line-icon.png') no-repeat 15px;
+    margin-top: 1px;    
+}
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     /* Safari and Chrome */
     .dropdown-menu.extended  {
@@ -1773,16 +1783,16 @@ div[data-role="editor-toolbar"] {
 }
 
 .search:focus {
-    margin-top: 5px ;
-    width: 180px;
-    border: 1px solid #eaeaea;
+    margin-top: 5px;
+    color: black;
+    width: 500px;
+    border: 1px solid rgba(128, 128, 128, 0.62);
     box-shadow: none;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
-    color: #c8c8c8;
     font-weight: 300;
 }
 
@@ -4937,4 +4947,28 @@ span.customSelect.changed {
 }
 .customSelectInner {
     background:url(../img/customSelect-arrow.gif) no-repeat center right;
+}
+
+.search-list li {
+    border-bottom: 1px solid rgba(43, 43, 43, 0.25);
+    margin-right: 45px;
+    padding-bottom: 10px;
+}
+
+.search-list li:hover {
+    color: #FCCF87;
+    -webkit-transition: all 0.2s ease;
+    display: block;
+    cursor: pointer;
+}
+
+.search-list p {
+    font-weight: 100;
+}
+
+.search-list h2 {
+    font-weight: 400;
+}
+.search-list li:last-child {
+  border: none;
 }
