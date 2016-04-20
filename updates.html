@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="img/favicon.png">
 
     <title>Donate Web App</title>
-
+    <link rel="icon" type="image/png" href="difference favicon.png">
     <!-- Bootstrap CSS -->    
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- bootstrap theme -->
@@ -30,7 +30,6 @@
       <script src="js/lte-ie7.js"></script>
     <![endif]-->
 
-  
   </head>
 
   <body>
@@ -46,7 +45,7 @@
             </div>
 
             <!--logo start-->
-            <a href="feed.html" class="logo"> <img src="logo.png" alt="HTML5 Icon" style="width:32px;height:32px;"> onate </a>
+            <a href="feed.html" class="logo"> <img src="img/difference Logo.svg" alt="HTML5 Icon"></a>
             <!--logo end-->
 
             <div class="top-nav notification-row">                
@@ -55,16 +54,6 @@
                     
 
                     <!-- user login dropdown start-->
-                    <li class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="profile-ava">
-                                <img alt="" src="img/avatar1_small.jpg">
-                            </span>
-                            <span class="username">Jenifer Smith</span>
-                            
-                        </a>
-                       
-                    </li>
                     <!-- user login dropdown end -->
                 </ul>
                 <!-- notificatoin dropdown end-->
@@ -81,7 +70,6 @@
 
                   <li class="sub-menu">
                       <a href="javascript:;" class="">
-                          <i class="icon_desktop"></i>
                           <span>Feed</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
@@ -93,13 +81,11 @@
                   </li>      
                   <li class="sub-menu">
                       <a href="search.html" class="">
-                          <i class="icon_desktop"></i>
                           <span>Charities Search</span>
                       </a>
                   </li>
                   <li>                     
                       <a class="" href="chart-chartjs.html">
-                          <i class="icon_piechart"></i>
                           <span>Charts</span>
                           
                       </a>
@@ -107,19 +93,15 @@
                   </li>  
                 <li>                     
                       <a class="" href="myprofile.html">
-                          <i class="icon_piechart"></i>
-                          <span>Profile</span>
-                          
+                          <span>Profile</span> 
                       </a>
                                          
                   </li>                  
                   <li class="sub-menu">
                       <a href="aboutus.html" class="">
-                          <i class="icon_documents_alt"></i>
                           <span>About Us</span>
                       </a>
-                  </li>
-                  
+                  </li>                
               </ul>
               <!-- sidebar menu end-->
           </div>
@@ -145,35 +127,37 @@
     <!-- nice scroll -->
     <script src="js/jquery.scrollTo.min.js"></script>
 
-    <!--custome script for all page-->
+    <!--custome script for all page  col-md-6 col-md-offset-3-->
     <script src="js/scripts.js"></script>
 
     <script>
-      function randomDecimal() {
-        return (10 * Math.random()).toFixed(2);
-      }
       var template = '<div class="row card"><div class="col-md-6 col-md-offset-3">' +
                       '<div class="panel-group" id="accordion"><div class="shadow panel">' +
-                      '<div class="card-status"><h3 style="margin-bottom: 20px"></h3></div>' +
+                      '<div class="card-title"><div class="row">' +
+                      '<div class="col-sm-2"><img src="img/prof-pic.png"/></div>' +
+                      '<div class="col-sm-10 text"><h3></h3><p></p></div></div></div>' +
+                      '<div class="card-status"><p></p></div>' +
                       '<div class="card-react">' +
                       '<i class="fa fa-heart" aria-hidden="true"></i> <input class="" placeholder="Write a comment..." type="text"></div></div></div></div></div>';
 
-      var status = " donated <b>$4.87</b>!";
+      var status = "Occupy ethical lomo you probably haven't heard of them, 8-bit bitters gentrify normcore 90's narwhal tumblr helvetica affogato seitan. Pour-over fashion axe 8-bit vice meggings truffaut crucifix heirloom, cardigan retro gentrify banjo banh mi messenger bag biodiesel. Banjo tofu gastropub, next level fap kogi PBR&B butcher stumptown before they sold out flexitarian.";
 
       var values = [
-        {name : 'Helping Hands', time : '2 hr', name : 'Sean Kallungal'},
-        {name : 'A Wider Circle', time : '4 hr', name : 'You'},
-        {name : 'Direct Relief', time : '5 hr', name : 'Steve Fessler'},
-        {name : 'Red Cross', time : '6 hr', name : 'Patrick Sweeney'},
-        {name : 'Midwest Foodbank', time : '10 hr', name : 'Neil Alberg'},
-        {name : 'Books for Africa', time : '12 hr', name : 'Sean Kallungal'},
-        {name : 'MAP International', time : '13 hr', name : 'You'}
+        {name : 'Helping Hands', time : '2 hr'},
+        {name : 'A Wider Circle', time : '4 hr'},
+        {name : 'Direct Relief', time : '5 hr'},
+        {name : 'Red Cross', time : '6 hr'},
+        {name : 'Midwest Foodbank', time : '10 hr'},
+        {name : 'Books for Africa', time : '12 hr'},
+        {name : 'MAP International', time : '13 hr'}
       ];
 
       values.forEach(function(obj) {
         var card = document.createElement('div');
         card.innerHTML = template;
-        $(card).find('.card-status h3').append(obj.name + " donated <b>$" + randomDecimal() + "!</b>");
+        $(card).find('.card-title h3').append(obj.name);
+        $(card).find('.card-title p').append(obj.time);
+        $(card).find('.card-status p').append(status);
         $('.wrapper').append(card);
       })
     </script>

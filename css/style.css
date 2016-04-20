@@ -11,7 +11,7 @@ Website: http://geekslabs.com/
 
 body {
     color: #797979;
-    background: #eeeeee;
+    background-color: #eeeeee;
     font-family: 'Lato', sans-serif;
     padding: 0px !important;
     margin: 0px !important;
@@ -25,6 +25,11 @@ label{
 }
 ul li {
     list-style: none;
+}
+
+
+.logo img {
+    height: 30px;
 }
 
 a, a:hover, a:focus {
@@ -97,7 +102,7 @@ table tr th { color: #688a7e;}
 .login-form {
     max-width: 350px;
     margin: 200px auto 0;
-    background: #d5d7de;    
+    background: #2C3E50;    
 }
 .login-img-body .login-form{
     max-width: 350px;
@@ -176,9 +181,12 @@ table tr th { color: #688a7e;}
 }
 .login-form .btn{
     border-radius: 0;
+    background-color: #3498DB;
+    color: white;
+
 }
 .login-form .btn-login {
-    background: #f67a6e;
+    background: #3498DB;
     color: #fff;
     text-transform: uppercase;
     font-weight: 300;
@@ -209,7 +217,10 @@ table tr th { color: #688a7e;}
 }
 
 .login-wrap {
+    border-radius: 10px;
+    background-color: #ECF0F1;
     padding: 20px;
+    border: 2px white solid;
 }
 
 .login-social-link  {
@@ -258,10 +269,16 @@ table tr th { color: #688a7e;}
 /*sidebar navigation*/
 
 #sidebar {
+
+    /*changes entire sidebar background color: origional color: #394a59*/
+    background: #2C3E50;
+
+
     width: 180px;
     height: 100%;
     position: fixed;
-    background: #394a59;
+
+
      
 }
 
@@ -287,7 +304,11 @@ ul.sidebar-menu {
 }
 
 ul.sidebar-menu li ul.sub li{
-    background: #394a59;
+
+    /*changes drop down backkground color. Original color #394a59 */
+    background: #2C3E50;
+
+
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
@@ -299,6 +320,10 @@ ul.sidebar-menu li ul.sub li:last-child{
 }
 
 ul.sidebar-menu li ul.sub li a {
+
+    /*changes drop down text color. Original color #d0d8df */
+    color: #d0d8df;
+
     font-size: 12px;
     padding: 0 0 0 32px;
     line-height: 35px;
@@ -308,12 +333,14 @@ ul.sidebar-menu li ul.sub li a {
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    color: #d0d8df;
     font-size: 14px;
 }
 
 ul.sidebar-menu li ul.sub li a:hover, ul.sidebar-menu li ul.sub li.active a {
+
+    /*changes drop down text color when highlighted/hovered. Original color #fff*/
     color: #fff;
+
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -342,27 +369,41 @@ ul.sidebar-menu li a span{
 }
 
 ul.sidebar-menu li a{
-    color: #d0d8df;
+
+    /*changes text color in side bar. Original color #fff*/
+    color: #fff;
+
+    /*changes table border color both set originally to #D7D7D7*/
+    border-right: 1px solid #D7D7D7;
+    border-bottom: 1px solid #D7D7D7;
+
     text-decoration: none;
     display: block;
     padding: 15px 0 15px 10px;
     font-size: 16px;
+
+    /*originally 300*/
     font-weight: 300;
+
     outline: none;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    border-right: 1px solid #D7D7D7;
-    border-bottom: 1px solid #D7D7D7;
+
+    
 }
 /*ul.sidebar-menu li a i{
     position: relative;
     top: 2px;
 }*/
 ul.sidebar-menu li.active a, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
-    background: #2e3b46;
+
+    /*Color background changes to when hovering. Origional: #2e3b46 */
+    background: #2980B9;
+
+    /*Color text changes to when hovering. Origional: #fff*/
     color: #fff;
     display: block;
     /*border-radius: 4px;
@@ -374,6 +415,7 @@ ul.sidebar-menu li.active a, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:fo
     transition: all 0.3s ease;        
 }
 ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
+    /*color border changes to when hovering. Oringal d0d8df */
     border-bottom: 1px solid #d0d8df;
 }
 /*ul.sidebar-menu li.active a,*/ ul.sidebar-menu .sub-menu li.active a{
@@ -381,12 +423,18 @@ ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
 }
 
 ul.sidebar-menu li a i {
+
+
+
     font-size: 18px;
     padding-right: 6px;
-    /*color: #688a7e;*/
+
+    /*changes icon color: disabled*/
+    color: #000000
 }
 
 ul.sidebar-menu li a:hover i, ul.sidebar-menu li a:focus i {
+    /*changes Icon color when hovering*/
     color: #fff;
 }
 
@@ -531,11 +579,13 @@ ul.sidebar-menu li.active a i {
 a.logo {
     font-size: 22px;
     font-weight: 300;
-    color: #fed189;
+    color: #e6e6e6;
     float: left;
     margin-top: 15px;
     text-transform: uppercase;
 }
+
+
 
 a.logo:hover, a.logo:focus {
     text-decoration: none;
@@ -633,6 +683,16 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
     background: white url('../img/icons/search-line-icon.png') no-repeat 15px;
     margin-top: 1px;    
 }
+
+.navbar-form .donation-amount {    
+    width: 300px;
+    height: 50px;
+    border-color: #D4D2D2;
+    border-radius: 5px;
+    background: white;
+    margin-top: 1px;    
+}
+
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     /* Safari and Chrome */
@@ -1053,7 +1113,7 @@ div[data-role="editor-toolbar"] {
 .dark-bg {
   color : #fff;
   background : #1a2732;
-  background-color : #1a2732;
+  background-color : #2C3E50;
 }
 .facebook-bg {
   color: #fff;
@@ -1072,6 +1132,13 @@ div[data-role="editor-toolbar"] {
 }
 /*----------------------	panel-----------------*/
 .panel {
+
+
+
+  background:#F9FAFF; 
+  
+
+
   border:none;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -1765,7 +1832,24 @@ div[data-role="editor-toolbar"] {
     border-top-color: #4cd964 !important;
 }
 
+.donate {
+    margin-top: 6px ;
+    width: 20px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    border: 1px solid #fff;
+    box-shadow: none;
+    background: none;
+    padding:0 5px 0 35px;
+    color: black;
+}
 
+.donate:focus::-webkit-input-placeholder {
+    color: transparent;
+}
 /*search*/
 
 .search {
@@ -3869,8 +3953,14 @@ ul.amounts li {
     margin: -10px -15px -11px;
 }
 
+
+
 .tab-bg-primary {
-    background: #688a7e;    
+
+    /*tabs background color  #688a7e*/
+    background: #FFECB3;
+
+
     border-bottom: none;
 }
 
@@ -3892,11 +3982,18 @@ ul.amounts li {
 }
 
 .panel-heading .nav > li > a {
-    color: #fff;
+    
+    /*text color of tabs unhighlighted #fff* no backbround*/
+    color: #000000;
+    /*background: #FFECB3;*/
 }
 
 .panel-heading .nav > li.active > a, .panel-heading .nav > li > a:hover {
+
+    /*text and background color highlighted  
     color: #688a7e;
+    background: #fff;*/
+    color: #000000;
     background: #fff;
 }
 
@@ -4957,7 +5054,7 @@ span.customSelect.changed {
 }
 
 .search-list li:hover {
-    color: #FFC107;
+    color: #E25442;
     -webkit-transition: all 0.2s ease;
     display: block;
     cursor: pointer;
@@ -5008,6 +5105,7 @@ span.customSelect.changed {
 .card-status {
     margin: 5px 0px 0px 10px;
     font-weight: 300;
+    padding-right: 5px;
 }
 
 .card-react input {
@@ -5025,5 +5123,11 @@ span.customSelect.changed {
 }
 
 .card-react i:hover {
-    color: #FFC107;
+    color: #E25442;
+}
+
+.chart-total h1 {
+    color: rgba(67, 208, 0, 0.7);
+    font-weight: 400;
+    font-size: 48px;
 }
