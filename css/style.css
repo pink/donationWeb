@@ -1,4 +1,4 @@
-/*
+"sidebar-menu"/*
 Template Name: Creative Bootstrap 3 Responsive Admin Template
 Template Version: 1.0
 Author: GeeksLabs
@@ -258,10 +258,16 @@ table tr th { color: #688a7e;}
 /*sidebar navigation*/
 
 #sidebar {
+
+    /*changes entire sidebar background color: origional color: #394a59*/
+    background: #FFA000;
+
+
     width: 180px;
     height: 100%;
     position: fixed;
-    background: #394a59;
+
+
      
 }
 
@@ -287,7 +293,11 @@ ul.sidebar-menu {
 }
 
 ul.sidebar-menu li ul.sub li{
+
+    /*changes drop down backkground color. Original color #394a59 */
     background: #394a59;
+
+
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
@@ -299,6 +309,10 @@ ul.sidebar-menu li ul.sub li:last-child{
 }
 
 ul.sidebar-menu li ul.sub li a {
+
+    /*changes drop down text color. Original color #d0d8df */
+    color: #FF6F00;
+
     font-size: 12px;
     padding: 0 0 0 32px;
     line-height: 35px;
@@ -308,12 +322,14 @@ ul.sidebar-menu li ul.sub li a {
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    color: #d0d8df;
     font-size: 14px;
 }
 
 ul.sidebar-menu li ul.sub li a:hover, ul.sidebar-menu li ul.sub li.active a {
+
+    /*changes drop down text color when highlighted/hovered. Original color #fff*/
     color: #fff;
+
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -342,27 +358,44 @@ ul.sidebar-menu li a span{
 }
 
 ul.sidebar-menu li a{
-    color: #d0d8df;
+
+    /*changes text color in side bar. Original color #fff*/
+    color:#FF6F00;
+
+    /*added: changes background color of boxes*/
+    background: #FFECB3;
+
+    /*changes table border color both set originally to #D7D7D7*/
+    border-right: 1px solid #FFC107;
+    border-bottom: 1px solid #FFC107;
+
     text-decoration: none;
     display: block;
     padding: 15px 0 15px 10px;
     font-size: 16px;
-    font-weight: 300;
+
+    /*originally 300*/
+    font-weight: 800;
+
     outline: none;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    border-right: 1px solid #D7D7D7;
-    border-bottom: 1px solid #D7D7D7;
+
+    
 }
 /*ul.sidebar-menu li a i{
     position: relative;
     top: 2px;
 }*/
 ul.sidebar-menu li.active a, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
-    background: #2e3b46;
+
+    /*Color background changes to when hovering. Origional: #2e3b46 */
+    background: #FFC107;
+
+    /*Color text changes to when hovering. Origional: #fff*/
     color: #fff;
     display: block;
     /*border-radius: 4px;
@@ -374,6 +407,7 @@ ul.sidebar-menu li.active a, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:fo
     transition: all 0.3s ease;        
 }
 ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
+    /*color border changes to when hovering. Oringal d0d8df */
     border-bottom: 1px solid #d0d8df;
 }
 /*ul.sidebar-menu li.active a,*/ ul.sidebar-menu .sub-menu li.active a{
@@ -381,12 +415,18 @@ ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
 }
 
 ul.sidebar-menu li a i {
+
+
+
     font-size: 18px;
     padding-right: 6px;
-    /*color: #688a7e;*/
+
+    /*changes icon color: disabled*/
+    color: #000000
 }
 
 ul.sidebar-menu li a:hover i, ul.sidebar-menu li a:focus i {
+    /*changes Icon color when hovering*/
     color: #fff;
 }
 
@@ -531,7 +571,7 @@ ul.sidebar-menu li.active a i {
 a.logo {
     font-size: 22px;
     font-weight: 300;
-    color: #fed189;
+    color: #e6e6e6;
     float: left;
     margin-top: 15px;
     text-transform: uppercase;
