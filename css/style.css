@@ -1112,6 +1112,13 @@ div[data-role="editor-toolbar"] {
 }
 /*----------------------	panel-----------------*/
 .panel {
+
+
+
+  /*background:#FFECB3; */
+  
+
+
   border:none;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -3909,8 +3916,14 @@ ul.amounts li {
     margin: -10px -15px -11px;
 }
 
+
+
 .tab-bg-primary {
-    background: #688a7e;    
+
+    /*tabs background color  #688a7e*/
+    background: #FFECB3;
+
+
     border-bottom: none;
 }
 
@@ -3932,11 +3945,18 @@ ul.amounts li {
 }
 
 .panel-heading .nav > li > a {
-    color: #fff;
+    
+    /*text color of tabs unhighlighted #fff* no backbround*/
+    color: #000000;
+    /*background: #FFECB3;*/
 }
 
 .panel-heading .nav > li.active > a, .panel-heading .nav > li > a:hover {
+
+    /*text and background color highlighted  
     color: #688a7e;
+    background: #fff;*/
+    color: #000000;
     background: #fff;
 }
 
