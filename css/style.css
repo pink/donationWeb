@@ -1,4 +1,4 @@
-"sidebar-menu"/*
+/*
 Template Name: Creative Bootstrap 3 Responsive Admin Template
 Template Version: 1.0
 Author: GeeksLabs
@@ -11,7 +11,7 @@ Website: http://geekslabs.com/
 
 body {
     color: #797979;
-    background: #eeeeee;
+    background-color: #eeeeee;
     font-family: 'Lato', sans-serif;
     padding: 0px !important;
     margin: 0px !important;
@@ -311,7 +311,7 @@ ul.sidebar-menu li ul.sub li:last-child{
 ul.sidebar-menu li ul.sub li a {
 
     /*changes drop down text color. Original color #d0d8df */
-    color: #FF6F00;
+    color: #000000;
 
     font-size: 12px;
     padding: 0 0 0 32px;
@@ -360,7 +360,7 @@ ul.sidebar-menu li a span{
 ul.sidebar-menu li a{
 
     /*changes text color in side bar. Original color #fff*/
-    color:#FF6F00;
+    color:#000000;
 
     /*added: changes background color of boxes*/
     background: #FFECB3;
@@ -375,7 +375,7 @@ ul.sidebar-menu li a{
     font-size: 16px;
 
     /*originally 300*/
-    font-weight: 800;
+    font-weight: 300;
 
     outline: none;
     -webkit-transition: all 0.3s ease;
@@ -5068,6 +5068,7 @@ span.customSelect.changed {
 .card-status {
     margin: 5px 0px 0px 10px;
     font-weight: 300;
+    padding-right: 5px;
 }
 
 .card-react input {
@@ -5086,4 +5087,10 @@ span.customSelect.changed {
 
 .card-react i:hover {
     color: #FFC107;
+}
+
+.chart-total h1 {
+    color: rgba(67, 208, 0, 0.7);
+    font-weight: 400;
+    font-size: 48px;
 }

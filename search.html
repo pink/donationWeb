@@ -30,21 +30,9 @@
       <script src="js/lte-ie7.js"></script>
     <![endif]-->
 
-      <style> 
-
-      .wrapper {
-          background-image: url("SeeingSpots2.jpg");
-          -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-          
-      }
-    </style>
-
   </head>
 
-  <body style="background-color:#FFECB3;">
+  <body>
 
 
 
@@ -165,7 +153,7 @@
                 <form class="navbar-form">
                   <input class="search-bar search" placeholder="Search" type="text">
                 </form>
-                <ul class="search-list list">
+                <ul class="search-list list" id="list">
                 </ul>
               </div>
             </div>
@@ -211,6 +199,9 @@
       ];
 
       var charityList = new List('charity-list', options, values);
+      $('#list').on('click', '*', function() {
+        window.location.href = 'charitypage.html';
+      });
     </script>
 
   </body>
