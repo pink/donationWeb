@@ -9,6 +9,10 @@
   position: relative
 }
 
+.component {
+  z-index: 10;
+}
+
 html,
 body {
   height: 100%;
@@ -80,7 +84,7 @@ body {
   height: 3.5em;
   width: 3.5em;
   background-color: #ECF0F1;
-  position: fixed;
+  position: fixed !important;
   left: 50%;
   margin-left: -1.75em;
   bottom: -1.75em;

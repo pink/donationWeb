@@ -27,6 +27,11 @@ ul li {
     list-style: none;
 }
 
+
+.logo img {
+    height: 30px;
+}
+
 a, a:hover, a:focus {
     text-decoration: none;
     outline: none;
@@ -97,7 +102,7 @@ table tr th { color: #688a7e;}
 .login-form {
     max-width: 350px;
     margin: 200px auto 0;
-    background: #d5d7de;    
+    background: #2C3E50;    
 }
 .login-img-body .login-form{
     max-width: 350px;
@@ -176,9 +181,12 @@ table tr th { color: #688a7e;}
 }
 .login-form .btn{
     border-radius: 0;
+    background-color: #3498DB;
+    color: white;
+
 }
 .login-form .btn-login {
-    background: #f67a6e;
+    background: #3498DB;
     color: #fff;
     text-transform: uppercase;
     font-weight: 300;
@@ -209,7 +217,10 @@ table tr th { color: #688a7e;}
 }
 
 .login-wrap {
+    border-radius: 10px;
+    background-color: #ECF0F1;
     padding: 20px;
+    border: 2px white solid;
 }
 
 .login-social-link  {
@@ -260,7 +271,7 @@ table tr th { color: #688a7e;}
 #sidebar {
 
     /*changes entire sidebar background color: origional color: #394a59*/
-    background: #394a59;
+    background: #2C3E50;
 
 
     width: 180px;
@@ -295,7 +306,7 @@ ul.sidebar-menu {
 ul.sidebar-menu li ul.sub li{
 
     /*changes drop down backkground color. Original color #394a59 */
-    background: #394a59;
+    background: #2C3E50;
 
 
     margin-bottom: 0;
@@ -390,7 +401,7 @@ ul.sidebar-menu li a{
 ul.sidebar-menu li.active a, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
 
     /*Color background changes to when hovering. Origional: #2e3b46 */
-    background: #2e3b46;
+    background: #2980B9;
 
     /*Color text changes to when hovering. Origional: #fff*/
     color: #fff;
@@ -574,6 +585,8 @@ a.logo {
     text-transform: uppercase;
 }
 
+
+
 a.logo:hover, a.logo:focus {
     text-decoration: none;
     outline: none;
@@ -670,6 +683,16 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
     background: white url('../img/icons/search-line-icon.png') no-repeat 15px;
     margin-top: 1px;    
 }
+
+.navbar-form .donation-amount {    
+    width: 300px;
+    height: 50px;
+    border-color: #D4D2D2;
+    border-radius: 5px;
+    background: white;
+    margin-top: 1px;    
+}
+
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     /* Safari and Chrome */
@@ -1090,7 +1113,7 @@ div[data-role="editor-toolbar"] {
 .dark-bg {
   color : #fff;
   background : #1a2732;
-  background-color : #1a2732;
+  background-color : #2C3E50;
 }
 .facebook-bg {
   color: #fff;
@@ -1809,7 +1832,24 @@ div[data-role="editor-toolbar"] {
     border-top-color: #4cd964 !important;
 }
 
+.donate {
+    margin-top: 6px ;
+    width: 20px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    border: 1px solid #fff;
+    box-shadow: none;
+    background: none;
+    padding:0 5px 0 35px;
+    color: black;
+}
 
+.donate:focus::-webkit-input-placeholder {
+    color: transparent;
+}
 /*search*/
 
 .search {
@@ -5014,7 +5054,7 @@ span.customSelect.changed {
 }
 
 .search-list li:hover {
-    color: #FFC107;
+    color: #E25442;
     -webkit-transition: all 0.2s ease;
     display: block;
     cursor: pointer;
@@ -5083,7 +5123,7 @@ span.customSelect.changed {
 }
 
 .card-react i:hover {
-    color: #FFC107;
+    color: #E25442;
 }
 
 .chart-total h1 {
