@@ -260,7 +260,7 @@ table tr th { color: #688a7e;}
 #sidebar {
 
     /*changes entire sidebar background color: origional color: #394a59*/
-    background: #FFA000;
+    background: #394a59;
 
 
     width: 180px;
@@ -311,7 +311,7 @@ ul.sidebar-menu li ul.sub li:last-child{
 ul.sidebar-menu li ul.sub li a {
 
     /*changes drop down text color. Original color #d0d8df */
-    color: #000000;
+    color: #d0d8df;
 
     font-size: 12px;
     padding: 0 0 0 32px;
@@ -360,14 +360,11 @@ ul.sidebar-menu li a span{
 ul.sidebar-menu li a{
 
     /*changes text color in side bar. Original color #fff*/
-    color:#000000;
-
-    /*added: changes background color of boxes*/
-    background: #FFECB3;
+    color: #fff;
 
     /*changes table border color both set originally to #D7D7D7*/
-    border-right: 1px solid #FFC107;
-    border-bottom: 1px solid #FFC107;
+    border-right: 1px solid #D7D7D7;
+    border-bottom: 1px solid #D7D7D7;
 
     text-decoration: none;
     display: block;
@@ -393,7 +390,7 @@ ul.sidebar-menu li a{
 ul.sidebar-menu li.active a, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
 
     /*Color background changes to when hovering. Origional: #2e3b46 */
-    background: #FFC107;
+    background: #2e3b46;
 
     /*Color text changes to when hovering. Origional: #fff*/
     color: #fff;
