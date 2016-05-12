@@ -5,6 +5,8 @@
 }
 
 .main-logo {
+	position: relative;
+	z-index: 9999;
 	height: 100%;
 }
 
@@ -15,6 +17,14 @@
 .content {
 	padding: 10px 10px 0px 20px;
 }
+
+#particles-js {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	bottom: 10%;
+}
+
 
 .header button {
 	color: white;
